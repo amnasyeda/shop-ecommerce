@@ -27,8 +27,14 @@ function ProductList() {
         idbPromise('products', 'put', product);
       });
     } else if (!loading) {
+      idbPromise('products', 'get').then((products) => {
+        dispatch({
+          type: UPDATE_PRODUCTS,
+          products: products
+        });
+      });
     }
-  }, [data, dispatch])
+  }, [data, loading, dispatch]);
 
   function filterProducts() {
     if (!currentCategory) {
