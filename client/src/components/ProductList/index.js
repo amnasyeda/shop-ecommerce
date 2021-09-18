@@ -5,13 +5,17 @@ import ProductItem from "../ProductItem";
 import { QUERY_PRODUCTS } from "../../utils/queries";
 import spinner from "../../assets/spinner.gif"
 
-import { useStoreContext } from "../../utils/GlobalState";
+import { idbPromise } from "../../utils/helpers";
 import { UPDATE_PRODUCTS } from "../../utils/actions";
 
 function ProductList() {
-  const [state, dispatch] = useStoreContext();
+  const state = useSelector((state) => {
+    return state;
+  });
+  const dispatch = useDispatch();
+
   const { currentCategory } = state;
-  const { loading, data } = useQuery(QUERY_PRODUCTS);
+  const { loading, data } = useQuery(QUERY_PRODUCTS)
 
   useEffect(() => {
     if (data) {
@@ -19,6 +23,10 @@ function ProductList() {
         type: UPDATE_PRODUCTS,
         products: data.products
       });
+      data.products.forEach((product) => {
+        idbPromise('products', 'put', product);
+      });
+    } else if (!loading) {
     }
   }, [data, dispatch])
 
