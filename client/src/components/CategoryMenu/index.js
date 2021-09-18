@@ -9,6 +9,22 @@ function CategoryMenu() {
   const { categories } = state;
   const { data: categoryData } = useQuery(QUERY_CATEGORIES);
 
+  useEffect(() => {
+    if (categoryData) {
+      dispatch({
+        type: UPDATE_CATEGORIES,
+        categories: categoryData.categories
+      });
+    }
+  }, [categoryData, dispatch])
+
+  const handleClick = id => {
+    dispatch({
+      type: UPDATE_CURRENT_CATEGORY,
+      currentCategory: id
+    });
+  }
+
   return (
     <div>
       <h2>Choose a Category:</h2>
