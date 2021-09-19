@@ -12,15 +12,13 @@ E-commerce website made using Redux and Stripe which allows users to browse thro
 * [License](#license)
 
 ## Installation 
-The user will clone the repository and run `npm install` in the root, client, and sever directories followed by `npm start` in the root directory in order to connect to the server. 
+The user will clone the repository and run `npm install` in the root, client, and server directories. This will be followed by running `npm run seed` in the server directory and `npm run start:dev` in order to connect to the server. 
 
 ## Usage 
 The user can browse through items, see their order history, and save items for later via their personalized account. 
 
-### Homepage
-
 ## Links
-* [Deployed Application](https://shielded-lowlands-56806.herokuapp.com/)
+* [Deployed Application](https://shop-redux98.herokuapp.com/)
 
 ## Tools
 * Redux 
