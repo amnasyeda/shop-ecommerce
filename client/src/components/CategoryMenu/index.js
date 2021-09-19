@@ -6,8 +6,6 @@ import { idbPromise } from "../../utils/helpers";
 import { useDispatch, useSelector } from 'react-redux';
 
 function CategoryMenu() {
-  const [state, dispatch] = useStoreContext();
-
   const state = useSelector((state) => {
     return state;
   });

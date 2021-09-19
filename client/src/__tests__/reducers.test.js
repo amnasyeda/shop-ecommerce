@@ -17,7 +17,20 @@ const initialState = {
     products: [],
     categories: [{name: 'Food' }],
     currentCategory: '1',
-};
+    cart: [
+        {
+          _id: '1',
+          name: 'Soup',
+          purchaseQuantity: 1
+        },
+        {
+          _id: '2',
+          name: 'Bread',
+          purchaseQuantity: 2
+        }
+      ],
+      cartOpen: false
+    };
 
 test('UPDATE_PRODUCTS', () => {
     let newState = reducer(initialState, {
