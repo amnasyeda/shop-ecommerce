@@ -7,6 +7,7 @@ import spinner from "../../assets/spinner.gif"
 
 import { idbPromise } from "../../utils/helpers";
 import { UPDATE_PRODUCTS } from "../../utils/actions";
+import { useDispatch, useSelector } from 'react-redux';
 
 function ProductList() {
   const state = useSelector((state) => {
