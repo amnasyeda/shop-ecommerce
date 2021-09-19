@@ -16,9 +16,14 @@ The user will clone the repository and run `npm install` in the root, client, an
 
 ## Usage 
 The user can browse through items, see their order history, and save items for later via their personalized account. 
-<img width="854" alt="Screen Shot 2021-09-19 at 1 39 08 PM" src="https://user-images.githubusercontent.com/81194686/133937330-ffe8bd3c-0d3e-4a7a-8b10-e2125dcce1b6.png">
 
-<img width="854" alt="Screen Shot 2021-09-19 at 12 53 51 PM" src="https://user-images.githubusercontent.com/81194686/133937251-9353e120-cc81-44bf-8d3c-22cfaa72cfe4.png">
+### Application Gif 
+
+
+https://user-images.githubusercontent.com/81194686/133939054-450428d0-28c1-41c4-9201-0e1d8222aafe.mov
+
+
+<img width="854" alt="Screen Shot 2021-09-19 at 1 39 08 PM" src="https://user-images.githubusercontent.com/81194686/133937330-ffe8bd3c-0d3e-4a7a-8b10-e2125dcce1b6.png">
 
 ## Links
 * [Deployed Application](https://shop-redux98.herokuapp.com/)
