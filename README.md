@@ -26,7 +26,7 @@ https://user-images.githubusercontent.com/81194686/133939054-450428d0-28c1-41c4-
 <img width="854" alt="Screen Shot 2021-09-19 at 1 39 08 PM" src="https://user-images.githubusercontent.com/81194686/133937330-ffe8bd3c-0d3e-4a7a-8b10-e2125dcce1b6.png">
 
 ## Links
-* [Deployed Application](https://shop-redux98.herokuapp.com/)
+* [Deployed Application](https://aqueous-mesa-67588.herokuapp.com//)
 
 ## Tools
 * Redux 
